@@ -1,3 +1,36 @@
+
+## cara penginstalan
+ - silahkan clone source code nya atau download file zip terlebih dahulu kemudian extract
+ - buka via git bash here
+ - lalu jalankan perintah 
+    ```markdown 
+    composer install
+    ```
+ - kemudian buka file .env.example, lalu edit pada bagian DB_DATABASE=laravel menjadi 
+    ```markdown
+    DB_DATABASE=dbsuyomart. 
+    ```
+    Lalu save as dengan nama .env
+ - lalu jalankan perintah 
+    ```markdown
+    php artisan key:generate
+    ```
+ - buat database baru dengan nama dbsuyomart, kemudian jalankan perintah 
+    ```markdown
+    php artisan migrate 
+    ```
+    pada git bash
+    
+  - jalankan program dengan perintah 
+    ```markdown
+    php artisan serve
+    ```
+  
+
+        
+    
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
