@@ -1,3 +1,7 @@
+## Program penjualan makanan sederhana
+
+
+
 
 ## cara penginstalan
  - silahkan clone source code nya atau download file zip terlebih dahulu kemudian extract
