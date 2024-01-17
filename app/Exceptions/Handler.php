@@ -39,6 +39,11 @@ class Handler extends ExceptionHandler
         parent::report($exception);
     }
 
+    public function shouldReport(Throwable $e)
+    {
+        return parent::shouldReport($e);
+    }
+
     /**
      * Render an exception into an HTTP response.
      *
@@ -51,5 +56,10 @@ class Handler extends ExceptionHandler
     public function render($request, Throwable $exception)
     {
         return parent::render($request, $exception);
+    }
+
+    public function renderForConsole($output, Throwable $exception)
+    {
+        return parent::renderForConsole($output, $exception);
     }
 }
